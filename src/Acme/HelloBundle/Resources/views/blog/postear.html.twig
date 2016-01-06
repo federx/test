@@ -1,0 +1,23 @@
+{% extends "AcmeHelloBundle:blog:base.html.twig" %}
+
+	{%block body%}
+	<form action= "/post" method="POST">
+			<table>
+				{% if esteselpao  == 1 %}
+					<div style="color:red;background:green;">Datos guardados correctamente</div>
+				 {% else %}
+				 	<div style="color:green;background:red;">Complete los campos</div>
+				{% endif%}
+			<td>Titulo:<input type="text" name="titulo"></td>
+			</table><br>
+			<table>
+			<td>Blog:<input type="text" name="blog" value={{blog}}><br><br></td>
+			</table>
+			<input type="submit" name="Postear">&nbsp;
+			<input type="reset" >
+			<br><br>
+			{% include 'AcmeHelloBundle:blog:menu.html.twig' %}
+
+		</form>
+
+		{%endblock%}

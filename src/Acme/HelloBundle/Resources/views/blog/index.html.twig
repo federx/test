@@ -1,0 +1,36 @@
+{% extends "AcmeHelloBundle:blog:base.html.twig" %}
+	
+	{%block body%}
+	<center>
+			<table border=1 WITH=300>
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Titulo</th>
+						<th>Contenido</th>
+						<th>Eliminar</th>
+					</tr>
+				</thead>
+					<tbody>
+						{%for b in blogs %}
+							<tr>
+								<td>
+							<a href="/findid/{{b.id}}">{{b.id}}</a>
+						</td>
+						<td>
+							{{b.titulo}}
+						</td>
+						<td>
+							{{b.cuerpo}}
+						</td>
+						<td>
+						<a href="/delete/{{b.id}}">Eliminar</a>
+						</td>
+					</tr>
+					{%endfor%}
+				</tbody>
+			</table>
+	</center>
+	<br><br>
+	{% include 'AcmeHelloBundle:blog:menu.html.twig'%}
+	{%endblock%}

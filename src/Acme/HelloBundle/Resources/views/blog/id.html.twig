@@ -1,0 +1,30 @@
+{% extends "AcmeHelloBundle:blog:base.html.twig" %}
+	
+	{%block body%}
+	<center>
+			<table border=1 WITH=300>
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Titulo</th>
+						<th>Contenido</th>
+					</tr>
+				</thead>
+					<tbody>
+							<tr>
+								<td>
+							{{lol.id}}
+						</td>
+						<td>
+							{{lol.titulo}}
+						</td>
+						<td>
+							{{lol.cuerpo}}
+						</td>
+					</tr>
+				</tbody>
+			</table>
+	</center>
+	<br><br>
+	{% include 'AcmeHelloBundle:blog:menu.html.twig'%}
+	{%endblock%}
