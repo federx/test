@@ -26,6 +26,7 @@ class DefaultController extends Controller
     }
     public function postAction(Request $aux)
     {
+     #cambiado por rcespedes.
       $blog = "";       
       $titulo = "";
       $paso = 0;
