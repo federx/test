@@ -84,4 +84,9 @@ class DefaultController extends Controller
 
         return $this->render('AcmeHelloBundle:blog:eliminar.html.twig', array('delete' => $hue,'lista'=>$aux));
     }
+
+    public function pruebaAction()
+    {
+        return $this->render('AcmeHelloBundle:bootstrap:prueba1.html.twig');
+    }
 }

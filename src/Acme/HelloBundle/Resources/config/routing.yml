@@ -20,3 +20,6 @@ acme_id:
 acme_d: 
     path:     /delete/{id}
     defaults: { _controller: AcmeHelloBundle:Default:eliminarporid }
+pruebaBooStrap: 
+    path:     /prueba
+    defaults: { _controller: AcmeHelloBundle:Default:prueba }
