@@ -1,8 +1,9 @@
 {% extends "AcmeHelloBundle:blog:base.html.twig" %}
 	
 	{%block body%}
+	{% include 'AcmeHelloBundle:blog:menu.html.twig'%}
 	<center>
-			<table border=1 WITH=300>
+			<table class="table table-hover table-bordered">
 				<thead>
 					<tr>
 						<th>ID</th>
@@ -26,5 +27,5 @@
 			</table>
 	</center>
 	<br><br>
-	{% include 'AcmeHelloBundle:blog:menu.html.twig'%}
+	
 	{%endblock%}

@@ -1,6 +1,7 @@
 {% extends "AcmeHelloBundle:blog:base.html.twig" %}
 	
 	{%block body%}
+	{% include 'AcmeHelloBundle:blog:menu.html.twig'%}
 	<center>
 			<table class="table table-hover table-bordered" >
 				<thead>
@@ -24,7 +25,7 @@
 							{{b.cuerpo}}
 						</td>
 						<td>
-						<a href="/delete/{{b.id}}">Eliminar</a>
+						<a type="button" class="btn btn-danger"href="/delete/{{b.id}}">Eliminar</a>
 						</td>
 					</tr>
 					{%endfor%}
@@ -32,5 +33,5 @@
 			</table>
 	</center>
 	<br><br>
-	{% include 'AcmeHelloBundle:blog:menu.html.twig'%}
+	
 	{%endblock%}
