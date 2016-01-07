@@ -89,4 +89,9 @@ class DefaultController extends Controller
     {
         return $this->render('AcmeHelloBundle:bootstrap:prueba1.html.twig');
     }
+
+    public function welcomeAction()
+    {
+        return $this->render('AcmeHelloBundle:blog:bienvenido.html.twig');
+    }
 }

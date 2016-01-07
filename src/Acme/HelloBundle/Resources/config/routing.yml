@@ -23,3 +23,6 @@ acme_d:
 pruebaBooStrap: 
     path:     /prueba
     defaults: { _controller: AcmeHelloBundle:Default:prueba }
+welcome: 
+    path:     /welcome
+    defaults: { _controller: AcmeHelloBundle:Default:welcome }
