@@ -5,12 +5,12 @@ namespace Acme\UserBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * User
+ * Parart
  *
- * @ORM\Table(name="user")
+ * @ORM\Table(name="parart")
  * @ORM\Entity
  */
-class User
+class Parart
 {
     /**
      * @var integer
@@ -24,30 +24,30 @@ class User
     /**
      * @var string
      *
-     * @ORM\Column(name="username", type="string", length=25, nullable=false)
+     * @ORM\Column(name="cliente", type="string", length=50, nullable=false)
      */
-    private $username;
+    private $cliente;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="pass", type="string", length=30, nullable=false)
+     * @ORM\Column(name="tweet", type="string", length=250, nullable=false)
      */
-    private $pass;
+    private $tweet;
 
     /**
-     * @var string
+     * @var \DateTime
      *
-     * @ORM\Column(name="email", type="string", length=60, nullable=false)
+     * @ORM\Column(name="hora", type="time", nullable=false)
      */
-    private $email;
+    private $hora;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="isActive", type="boolean", nullable=false)
+     * @ORM\Column(name="Realizado", type="boolean", nullable=false)
      */
-    private $isactive;
+    private $realizado;
 
 
 }

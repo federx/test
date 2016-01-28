@@ -26,3 +26,8 @@ pruebaBooStrap:
 welcome: 
     path:     /welcome
     defaults: { _controller: AcmeHelloBundle:Default:welcome }
+
+visa: 
+    path:     /vista
+    defaults: { _controller: AcmeHelloBundle:Default:vista }
+

@@ -94,4 +94,8 @@ class DefaultController extends Controller
     {
         return $this->render('AcmeHelloBundle:blog:bienvenido.html.twig');
     }
+    public function vistaAction()
+    {
+        return $this->render('AcmeHelloBundle:VistaSisa:vista.html.twig');
+    }
 }

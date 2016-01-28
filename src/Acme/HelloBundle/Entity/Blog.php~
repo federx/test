@@ -36,5 +36,62 @@ class Blog
     private $cuerpo;
 
 
-}
 
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set titulo
+     *
+     * @param string $titulo
+     *
+     * @return Blog
+     */
+    public function setTitulo($titulo)
+    {
+        $this->titulo = $titulo;
+
+        return $this;
+    }
+
+    /**
+     * Get titulo
+     *
+     * @return string
+     */
+    public function getTitulo()
+    {
+        return $this->titulo;
+    }
+
+    /**
+     * Set cuerpo
+     *
+     * @param string $cuerpo
+     *
+     * @return Blog
+     */
+    public function setCuerpo($cuerpo)
+    {
+        $this->cuerpo = $cuerpo;
+
+        return $this;
+    }
+
+    /**
+     * Get cuerpo
+     *
+     * @return string
+     */
+    public function getCuerpo()
+    {
+        return $this->cuerpo;
+    }
+}
